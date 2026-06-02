@@ -1,0 +1,92 @@
+/* ============================================
+   DESIGN SYSTEM — CSS Custom Properties
+   ============================================ */
+
+:root {
+  /* Background Colors */
+  --bg-primary: #0a0a12;
+  --bg-secondary: #12121e;
+  --bg-tertiary: #1a1a2e;
+  --bg-card: rgba(26, 26, 46, 0.6);
+  --bg-hover: rgba(108, 92, 231, 0.08);
+  --bg-active: rgba(108, 92, 231, 0.15);
+  --bg-input: rgba(255, 255, 255, 0.05);
+
+  /* Glass Effect */
+  --glass-bg: rgba(26, 26, 46, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.06);
+  --glass-blur: 20px;
+
+  /* Accent Colors */
+  --accent-primary: #6c5ce7;
+  --accent-secondary: #a855f7;
+  --accent-gradient: linear-gradient(135deg, #6c5ce7, #a855f7);
+  --accent-gradient-hover: linear-gradient(135deg, #7c6df7, #b865ff);
+  --accent-glow: rgba(108, 92, 231, 0.3);
+
+  /* Text Colors */
+  --text-primary: #f0f0f5;
+  --text-secondary: #8888a4;
+  --text-tertiary: #55556a;
+  --text-accent: #a78bfa;
+
+  /* Status Colors */
+  --online-color: #22c55e;
+  --offline-color: #64748b;
+  --unread-color: #6c5ce7;
+  --error-color: #ef4444;
+  --success-color: #22c55e;
+  --warning-color: #f59e0b;
+
+  /* Message Bubbles */
+  --bubble-sent: linear-gradient(135deg, #6c5ce7, #8b5cf6);
+  --bubble-received: rgba(255, 255, 255, 0.06);
+  --bubble-sent-text: #ffffff;
+  --bubble-received-text: #e0e0ee;
+
+  /* Borders */
+  --border-color: rgba(255, 255, 255, 0.06);
+  --border-subtle: rgba(255, 255, 255, 0.03);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 20px rgba(108, 92, 231, 0.15);
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-size-xs: 0.7rem;
+  --font-size-sm: 0.8rem;
+  --font-size-base: 0.9rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  --space-3xl: 48px;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Layout */
+  --sidebar-width: 360px;
+  --header-height: 64px;
+}
