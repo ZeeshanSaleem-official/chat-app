@@ -1,5 +1,6 @@
 /* ============================================
    LAYOUT — Sidebar + Main Area
+   Professional Dark Theme
    ============================================ */
 
 .chat-layout {
@@ -16,7 +17,7 @@
   border-right: 1px solid var(--border-color);
   display: flex;
   flex-direction: column;
-  animation: slideInLeft 0.4s ease;
+  animation: slideInLeft 0.3s ease;
 }
 
 .sidebar-header {
@@ -31,10 +32,8 @@
 .sidebar-title {
   font-size: var(--font-size-lg);
   font-weight: 700;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .sidebar-user {
@@ -62,7 +61,7 @@
 
 .logout-btn:hover {
   color: var(--error-color);
-  background: rgba(239, 68, 68, 0.1);
+  background: rgba(248, 81, 73, 0.08);
 }
 
 .sidebar-search {
@@ -77,17 +76,17 @@
   width: 100%;
   padding: var(--space-md) var(--space-lg);
   padding-left: 40px;
-  background: var(--bg-input);
+  background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-md);
   color: var(--text-primary);
   font-size: var(--font-size-sm);
-  transition: all var(--transition-base);
+  transition: border-color var(--transition-base);
 }
 
 .search-input:focus {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
+  outline: none;
 }
 
 .search-input::placeholder {
@@ -126,19 +125,19 @@
   justify-content: center;
   gap: var(--space-lg);
   color: var(--text-tertiary);
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.4s ease;
 }
 
 .empty-state-icon {
-  font-size: 4rem;
-  opacity: 0.3;
-  animation: float 6s ease-in-out infinite;
+  font-size: 3.5rem;
+  opacity: 0.2;
 }
 
 .empty-state h2 {
   font-size: var(--font-size-lg);
   font-weight: 600;
   color: var(--text-secondary);
+  letter-spacing: -0.01em;
 }
 
 .empty-state p {

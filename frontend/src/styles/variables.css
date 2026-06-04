@@ -1,58 +1,59 @@
 /* ============================================
    DESIGN SYSTEM — CSS Custom Properties
+   Professional Dark Theme
    ============================================ */
 
 :root {
   /* Background Colors */
-  --bg-primary: #0a0a12;
-  --bg-secondary: #12121e;
-  --bg-tertiary: #1a1a2e;
-  --bg-card: rgba(26, 26, 46, 0.6);
-  --bg-hover: rgba(108, 92, 231, 0.08);
-  --bg-active: rgba(108, 92, 231, 0.15);
-  --bg-input: rgba(255, 255, 255, 0.05);
+  --bg-primary: #0f1117;
+  --bg-secondary: #161b22;
+  --bg-tertiary: #1c2330;
+  --bg-card: #1c2330;
+  --bg-hover: rgba(255, 255, 255, 0.04);
+  --bg-active: rgba(255, 255, 255, 0.07);
+  --bg-input: rgba(255, 255, 255, 0.04);
 
-  /* Glass Effect */
-  --glass-bg: rgba(26, 26, 46, 0.4);
-  --glass-border: rgba(255, 255, 255, 0.06);
-  --glass-blur: 20px;
+  /* Glass Effect — subtle, no blur theatrics */
+  --glass-bg: #161b22;
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-blur: 0px;
 
-  /* Accent Colors */
-  --accent-primary: #6c5ce7;
-  --accent-secondary: #a855f7;
-  --accent-gradient: linear-gradient(135deg, #6c5ce7, #a855f7);
-  --accent-gradient-hover: linear-gradient(135deg, #7c6df7, #b865ff);
-  --accent-glow: rgba(108, 92, 231, 0.3);
+  /* Accent Colors — clean blue, no purple gradient */
+  --accent-primary: #2563eb;
+  --accent-secondary: #3b82f6;
+  --accent-gradient: #2563eb;
+  --accent-gradient-hover: #1d4ed8;
+  --accent-glow: rgba(37, 99, 235, 0.15);
 
   /* Text Colors */
-  --text-primary: #f0f0f5;
-  --text-secondary: #8888a4;
-  --text-tertiary: #55556a;
-  --text-accent: #a78bfa;
+  --text-primary: #e6edf3;
+  --text-secondary: #7d8590;
+  --text-tertiary: #484f58;
+  --text-accent: #58a6ff;
 
   /* Status Colors */
-  --online-color: #22c55e;
-  --offline-color: #64748b;
-  --unread-color: #6c5ce7;
-  --error-color: #ef4444;
-  --success-color: #22c55e;
-  --warning-color: #f59e0b;
+  --online-color: #3fb950;
+  --offline-color: #484f58;
+  --unread-color: #2563eb;
+  --error-color: #f85149;
+  --success-color: #3fb950;
+  --warning-color: #d29922;
 
   /* Message Bubbles */
-  --bubble-sent: linear-gradient(135deg, #6c5ce7, #8b5cf6);
-  --bubble-received: rgba(255, 255, 255, 0.06);
+  --bubble-sent: #2563eb;
+  --bubble-received: #1c2330;
   --bubble-sent-text: #ffffff;
-  --bubble-received-text: #e0e0ee;
+  --bubble-received-text: #e6edf3;
 
   /* Borders */
-  --border-color: rgba(255, 255, 255, 0.06);
-  --border-subtle: rgba(255, 255, 255, 0.03);
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.04);
 
   /* Shadows */
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 20px rgba(108, 92, 231, 0.15);
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 0 rgba(0, 0, 0, 0);
 
   /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -75,16 +76,16 @@
   --space-3xl: 48px;
 
   /* Border Radius */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 20px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
   --radius-full: 9999px;
 
   /* Transitions */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
-  --transition-slow: 400ms ease;
+  --transition-fast: 120ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 350ms ease;
 
   /* Layout */
   --sidebar-width: 360px;

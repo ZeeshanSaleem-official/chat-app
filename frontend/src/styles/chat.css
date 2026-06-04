@@ -1,5 +1,5 @@
 /* ============================================
-   CHAT WINDOW
+   CHAT WINDOW — Professional Dark Theme
    ============================================ */
 
 .chat-container {
@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.25s ease;
 }
 
 /* Chat Header */
@@ -16,26 +16,25 @@
   align-items: center;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-xl);
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
+  background: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
   min-height: var(--header-height);
 }
 
 .chat-header-avatar {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--font-size-base);
-  font-weight: 600;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
   color: white;
   text-transform: uppercase;
   flex-shrink: 0;
+  letter-spacing: 0.05em;
 }
 
 .chat-header-info {
@@ -46,6 +45,7 @@
   font-size: var(--font-size-base);
   font-weight: 600;
   color: var(--text-primary);
+  letter-spacing: -0.01em;
 }
 
 .chat-header-status {
@@ -69,7 +69,6 @@
 
 .status-dot.online {
   background: var(--online-color);
-  box-shadow: 0 0 6px rgba(34, 197, 94, 0.5);
 }
 
 /* Messages Area */
@@ -80,6 +79,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  background: var(--bg-primary);
 }
 
 /* Date separator */
@@ -103,6 +103,8 @@
   color: var(--text-tertiary);
   white-space: nowrap;
   font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 /* Message Bubble */
@@ -110,7 +112,7 @@
   display: flex;
   flex-direction: column;
   max-width: 65%;
-  animation: fadeInUp 0.25s ease;
+  animation: fadeInUp 0.2s ease;
 }
 
 .message-wrapper.sent {
@@ -127,7 +129,7 @@
   padding: var(--space-md) var(--space-lg);
   border-radius: var(--radius-lg);
   font-size: var(--font-size-base);
-  line-height: 1.5;
+  line-height: 1.55;
   word-wrap: break-word;
   position: relative;
 }
@@ -136,7 +138,6 @@
   background: var(--bubble-sent);
   color: var(--bubble-sent-text);
   border-bottom-right-radius: var(--radius-sm);
-  box-shadow: 0 2px 12px rgba(108, 92, 231, 0.2);
 }
 
 .message-wrapper.received .message-bubble {
@@ -163,7 +164,7 @@
   align-items: center;
   gap: var(--space-sm);
   padding: var(--space-sm) var(--space-xl);
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn 0.25s ease;
 }
 
 .typing-indicator-text {
@@ -195,7 +196,7 @@
 
 /* Message Input */
 .message-input-area {
-  padding: var(--space-lg) var(--space-xl);
+  padding: var(--space-md) var(--space-xl);
   background: var(--bg-secondary);
   border-top: 1px solid var(--border-color);
 }
@@ -204,16 +205,15 @@
   display: flex;
   align-items: center;
   gap: var(--space-md);
-  background: var(--bg-input);
+  background: var(--bg-tertiary);
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-lg);
   padding: var(--space-xs) var(--space-xs) var(--space-xs) var(--space-lg);
-  transition: all var(--transition-base);
+  transition: border-color var(--transition-base);
 }
 
 .message-input-container:focus-within {
   border-color: var(--accent-primary);
-  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.1);
 }
 
 .message-input {
@@ -231,24 +231,24 @@
 }
 
 .send-button {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--accent-gradient);
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  background: var(--accent-primary);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all var(--transition-base);
+  transition: background var(--transition-fast), transform var(--transition-fast);
   border: none;
   flex-shrink: 0;
   font-size: var(--font-size-md);
 }
 
 .send-button:hover:not(:disabled) {
-  transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(108, 92, 231, 0.4);
+  background: var(--accent-gradient-hover);
+  transform: scale(1.05);
 }
 
 .send-button:disabled {

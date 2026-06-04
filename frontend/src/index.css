@@ -133,14 +133,7 @@ textarea {
   }
 }
 
-@keyframes glow {
-  0%, 100% {
-    box-shadow: 0 0 5px rgba(108, 92, 231, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
-  }
-}
+/* glow animation removed in professional theme */
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
@@ -185,15 +178,13 @@ textarea {
 }
 
 .btn-primary {
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   color: white;
-  box-shadow: var(--shadow-glow);
 }
 
 .btn-primary:hover {
   background: var(--accent-gradient-hover);
   transform: translateY(-1px);
-  box-shadow: 0 0 30px rgba(108, 92, 231, 0.25);
 }
 
 .btn-primary:active {
